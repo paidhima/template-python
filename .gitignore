@@ -32,6 +32,9 @@ dmypy.json
 *~
 .DS_Store
 
+# Docs
+site/
+
 # Project specific
 *.log
 .env
