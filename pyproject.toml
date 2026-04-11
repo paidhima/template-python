@@ -5,38 +5,28 @@ description = "Python project template"
 readme = "README.md"
 license = {text = "MIT"}
 authors = [{name = "Your Name", email = "you@example.com"}]
-requires-python = ">=3.11"
+requires-python = ">=3.12"
 dependencies = []
 
 [project.optional-dependencies]
 dev = [
-    "pytest>=7.4",
-    "pytest-cov>=4.1",
-    "mypy>=1.5",
-    "black>=23.11",
-    "ruff>=0.1",
+    "pytest>=8.3.0",
+    "mypy>=1.15.0",
+    "ruff>=0.11.0",
 ]
 
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=75"]
 build-backend = "setuptools.build_meta"
 
-[tool.black]
-line-length = 100
-
-[tool.isort]
-profile = "black"
-line_length = 100
-
 [tool.mypy]
-python_version = "3.11"
+python_version = "3.12"
 strict = true
 warn_unused_ignores = true
 
 [tool.ruff]
 line-length = 100
-target-version = "py311"
+target-version = "py312"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-addopts = "-xvs --cov=src/ --cov-report=term-missing"
