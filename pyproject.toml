@@ -14,7 +14,7 @@ dev = [
     "pytest-cov>=4.1",
     "mypy>=1.5",
     "black>=23.11",
-    "ruff>=0.1",
+    "ruff>=0.15.10",
 ]
 
 [build-system]
